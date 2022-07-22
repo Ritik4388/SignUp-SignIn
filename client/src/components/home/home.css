@@ -1,0 +1,92 @@
+body {
+    background-color:darkgrey;
+}
+.home {
+    background-color: rgba(0, 128, 128, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 5px grey;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home > .button {
+    background-color:rgba(25, 25, 112, 0.8);
+    color: #fff;
+    width: 100px;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+.button:hover{
+    transform: scale(1.03);
+    background-color: black;
+    color: #fff;
+}
+
+@media screen and (max-width: 960px) {
+    .home{
+        width:50%;
+        font-size: 13px;
+    }
+
+    .home > .button {
+        font-size: 1rem;
+        padding: 0.3rem;
+        margin: 0.4rem 0;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .home{
+        width:60%;
+        height: 30%;
+        font-size: 10px;
+    }
+
+    .home > .button {
+        font-size: 1rem;
+        padding: 0.3rem;
+        margin: 0.4rem 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home{
+        width:80%;
+        font-size: 9px;
+    }
+
+    .home > .button {
+        font-size: 1rem;
+        padding: 0.3rem;
+        margin: 0.4rem 0;
+    }
+}
+
+
+@media screen and (max-width: 336px) {
+    .home{
+        width:80%;
+        font-size: 7px;
+    }
+
+    .home > .button {
+        font-size: 0.75rem;
+        padding: 0.3rem;
+        margin: 0.4rem 0;
+    }
+}

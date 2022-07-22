@@ -1,0 +1,81 @@
+body {
+    background-color:darkgrey;
+}
+.signUp{
+    width: 400px;
+    background-color: rgba(100, 149, 237, 0.6) ;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    text-align: center;
+}
+
+.signUp > input {
+    border-radius: 8px;
+    border: 2px solid #dddfe2;
+    outline: none;
+    color: #1d2129;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.75rem;
+    width: 92%;
+    font-size: 1rem;
+}
+
+.signUp > .button {
+    background-color:rgba(25, 25, 112, 0.75);
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+.button:hover{
+    transform: scale(1.03);
+}
+
+@media screen and (max-width: 800px) {
+    .signUp{
+        width:50%;
+    }
+
+    .signUp > input {
+        margin: 0.4rem 0;
+        padding: 0.3rem 0.45rem;
+        width: 92%;
+        font-size: 0.9rem;    
+    }
+
+    .signUp > .button {
+        font-size: 1.25rem;
+        padding: 0.3rem;
+        margin: 0.4rem 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .signUp{
+        width:80%;
+    }
+
+    .signUp > input {
+        margin: 0.4rem 0;
+        padding: 0.3rem 0.45rem;
+        width: 92%;
+        font-size: 0.9rem;    
+    }
+
+    .signUp > .button {
+        font-size: 1.25rem;
+        padding: 0.3rem;
+        margin: 0.4rem 0;
+    }
+}
